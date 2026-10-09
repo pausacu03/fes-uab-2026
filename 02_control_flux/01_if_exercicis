@@ -34,18 +34,28 @@
 # Demana el consum de dades en GB d'una línia mòbil. El pla inclou 20 GB.
 # Indica si el consum és dins del límit o si l'ha superat; en aquest últim cas,
 # calcula quants GB addicionals s'han consumit.
-consum=int(input("Consum de dades en GB: "))
-if consum <= 20:
-    print("No t'has passat :)")
-else:
-    extres=consum-20
-    print(f"T'has passat per {extres} GB!")
+#consum=int(input("Consum de dades en GB: "))
+#if consum <= 20:
+#    print("No t'has passat :)")
+#else:
+#    extres=consum-20
+#    print(f"T'has passat per {extres} GB!")
 
 # Exercici 4: Diagnòstic d'una connexió de fibra
 # Demana si l'indicador LOS del terminal òptic està encès i si l'indicador
 # d'Internet del router està encès. Segons aquestes dues dades, indica si cal
 # revisar el cable de fibra, comprovar el servei del proveïdor o si la connexió
 # sembla funcionar correctament.
+ind_los=input("L'indicador LOS està 'ences' o 'apagat'? ")
+ind_int=input("L'indicador d'Internet està 'ences' o 'apagat'? ")
+if ind_los == "apagat":
+    print("Revisa el cable de fibra")
+if ind_int == "apagat":
+    print("Comprova el servei del proveïdor")
+elif ind_los == "ences" and ind_int == "ences":
+    print ("Tot sembla anar bé :)")
+else:
+    print("Escriu només 'ences' o 'apagat' tontx")
 
 # Exercici 5: Bateria d'un sistema d'alimentació ininterrompuda (SAI)
 # Demana el percentatge de bateria disponible al SAI que alimenta un armari
