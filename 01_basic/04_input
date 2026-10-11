@@ -25,6 +25,7 @@ print(f"Es necessiten {temps} segons per transmetre 1 GB de l'enllaç de {longit
 # Demana el nombre d'hores de feina i el preu per hora d'una instal·lació de xarxa.
 # Demana també el preu del material.
 # Mostra el cost total de la instal·lació.
+
 num_hores=float(input("Hores de feina: "))
 preu_hora=float(input("Preu per hora: "))
 preu_material=float(input("Preu del material: "))

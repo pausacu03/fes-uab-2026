@@ -7,6 +7,7 @@
 # Crea variables per desar el nom d'un encaminador, la seva ubicació,
 # el nombre de ports i si està encès. Mostra les dades en una frase
 # utilitzant una f-string.
+
 nom_encaminador="router ProMax"
 ubicacio="escola d'enginyeria"
 nombre_ports=33
@@ -18,6 +19,7 @@ print (f"Encaminador: {nom_encaminador}; ubicació: {ubicacio}; ports: {nombre_p
 # i els GB consumits. Calcula quants GB queden i mostra el resultat.
 # Després, actualitza el consum amb un valor nou i torna a calcular
 # quants GB queden.
+
 gb_inclosos=25
 gb_consumits=10
 gb_restants=gb_inclosos-gb_consumits
