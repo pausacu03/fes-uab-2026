@@ -101,8 +101,22 @@ print(f"Hi ha {counter_soroll} mostres que superen el llindar de {llindar} dBm")
 # Fent servir un bucle for i els índexs de les llistes, compta quants bits
 # són diferents. Calcula i imprimeix la taxa d'error (bits diferents / total de bits).
 
+bits_transmesos=[1,0,1,1,0,0,1,0]
+bits_rebuts=[1,0,0,1,0,1,1,0]
+diferents=0
+for i in range(len(bits_transmesos)):
+    if bits_transmesos[i] != bits_rebuts[i]:
+        diferents += 1
+taxa_error = diferents / len(bits_transmesos)
+print(f"La taxa d'error és {taxa_error}")
+
 # Exercici 10: Període d'un senyal
 # Donades les freqüències següents, en hertzs:
 # frequencies = [50, 100, 500, 1000]
 # Fent servir un bucle for, calcula el període de cada senyal amb la fórmula
 # T = 1 / f i imprimeix cada freqüència amb el seu període en segons.
+
+frequencies=[50,100,500,1000]
+for f in frequencies:
+    T=1/f
+    print(f"La freqüència {f} Hz té un període de {T} segons")
