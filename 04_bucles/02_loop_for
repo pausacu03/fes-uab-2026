@@ -61,17 +61,38 @@ print(f"Hi ha {counter} paraules que comencen per la lletra {lletra}")
 # tensions = [4.8, 5.0, 5.1, 4.9, 5.2]
 # Fent servir un bucle for, calcula la tensió mitjana i imprimeix-la.
 
+tensions=[4.8,5.0,5.1,4.9,5.2]
+suma_tensions=0
+for tensio in tensions:
+    suma_tensions+=tensio
+mitjana_tensions=suma_tensions/len(tensions)
+print(f"La tensió mitjana és {mitjana_tensions} V")
+
 # Exercici 7: Corrent en resistències
 # En un circuit s'aplica una tensió de 12 V a aquestes resistències:
 # resistencies = [100, 220, 470, 1000]
 # Fent servir la llei d'Ohm (I = V / R) i un bucle for, calcula i imprimeix
 # el corrent que circula per cada resistència, en ampers.
 
+resistencies=[100,220,470,1000]
+tensio=12
+for resistencia in resistencies:
+    corrent=tensio/resistencia
+    print(f"El corrent que circula per la resistència {resistencia} Ohms és {corrent} A")
+
 # Exercici 8: Mostres que superen el llindar de soroll
 # Un receptor ha mesurat aquests nivells de soroll (en dBm):
 # nivells_soroll = [-92, -85, -78, -95, -81, -88]
 # Compta, amb un bucle for, quantes mostres superen el llindar de -80 dBm
 # (és a dir, tenen un valor més gran que -80) i imprimeix el resultat.
+
+nivells_soroll=[-92,-85,-78,-95,-81,-88]
+llindar=-80
+counter_soroll=0
+for nivell in nivells_soroll:
+    if nivell>llindar:
+        counter_soroll+=1
+print(f"Hi ha {counter_soroll} mostres que superen el llindar de {llindar} dBm")
 
 # Exercici 9: Càlcul de la taxa d'error de bits
 # Compara els bits transmesos i rebuts:
